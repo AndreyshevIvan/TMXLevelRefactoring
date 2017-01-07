@@ -46,6 +46,9 @@ public:
 	TmxObject GetFirstObject(const std::string &name)const;
 	std::vector<TmxObject> GetAllObjects(const std::string &name)const;
 	sf::Vector2i GetTileSize()const;
+	float GetTilemapWidth()const;
+	float GetTilemapHeight()const;
+	sf::Vector2f GetTilemapSize()const;
 
 	// Рисует все слои тайлов один за другим,
 	//  но не рисует объекты (рисованием которых должна заниматься игра).
